@@ -12,7 +12,7 @@
 	<section>
 		<nav id="main_nav">
 			<ul>
-				<li><a href="../index.php">Acceuil</a></li>
+				<li><a href="../index.php">Acceuil du site</a></li>
 				<li><a href="../php/cottage.php">Le gîte</a></li>
 				<li><a href="../php/around.php">Aux alentours</a></li>
 				<li><a href="">Situation</a></li>
