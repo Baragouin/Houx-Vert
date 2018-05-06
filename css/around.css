@@ -37,7 +37,7 @@ body{
 }
 
 #page article{
-    flex: 2;
+   	width: 70%;
 	padding: 0 20px;
 	font-family: "Quattrocento";
 }
@@ -66,7 +66,7 @@ body{
 }
 
 #page aside{
-    flex: 1;
+    width: 30%;
 }
 
 #page aside img{
