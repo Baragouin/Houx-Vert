@@ -9,7 +9,8 @@
 		$lang = "fr";
 	}
 
-	mail.send("medico.timothe@gmail.com", "contact@gitecolor.fr", "dd");
+	include("php/mail.php");
+	send("medico.timothe@gmail.com", "contact@gitecolor.fr", "dd");
 ?>
 
 <!DOCTYPE html>
