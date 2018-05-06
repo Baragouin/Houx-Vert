@@ -18,8 +18,9 @@
 }
 
 body{
+    background-image: url("../images/leaves.png");
     background-size: 100px;
-    background: url("../images/leaves.png") fixed;
+    background-attachment: fixed;
 }
 
 #main_wrapper{
