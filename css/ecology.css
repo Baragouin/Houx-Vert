@@ -60,7 +60,7 @@ body{
     margin: 20px 20px;
 }
 
-#page article ul{
+#page article ul, #page article ol{
     margin: 5px 0;
     padding-left: 40px;
 }
