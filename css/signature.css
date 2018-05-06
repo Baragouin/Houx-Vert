@@ -1,0 +1,22 @@
+.arrow{
+	margin-top: 15px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 17.3px 10px;
+	border-color: transparent transparent #bfcc4c transparent;
+
+	position: relative;
+	left: 100px;
+}
+
+.signature{
+	margin-left: 75px;
+	margin-bottom: 20px;
+	font-family: "DIN Pro";
+	font-size: 1.2em;
+	color: white;
+	background-color: #C0CC4C;
+	padding: 10px 10px;
+	width: 150px;
+}

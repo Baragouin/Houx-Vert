@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'DIN Pro';
+	font-style: normal;
+	font-weight: normal;
+	src: local('DIN Pro Condensed Black'), url('../fonts/DINPro-CondBlack.woff') format('woff');
+}
+
+body{
+	margin: 0;
+	font-family: "Din Pro"
+}
+
+header{
+	display: flex;
+	background-color: #003366;
+}
+
+header h1{
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+form{
+	margin: 0px 50px 100px 50px;
+}
+
+input[type=text]{
+	width: 300px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('../images/search.png');
+	background-position: 8px 7px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	transition:  width 0.4s ease-in-out;
+
+	margin-top: 20px;
+}
+
+input[type=text]:focus{
+	width: 600px;
+}

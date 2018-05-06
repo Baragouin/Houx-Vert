@@ -1,0 +1,15 @@
+footer{
+	background-color: #3CA23A;
+	height: 50px;
+}
+
+footer p{
+	text-align: center;
+	color: white;
+	font-family: "DIN Pro";
+	line-height: 50px;
+}
+
+#main_wrapper{
+	margin-bottom: 20px;
+}
