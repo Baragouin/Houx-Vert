@@ -15,7 +15,6 @@
 				<li><a href="../index.php">Acceuil</a></li>
 				<li><a href="../php/cottage.php">Le gîte</a></li>
 				<li><a href="../php/around.php">Aux alentours</a></li>
-				<li><a href="">Situation</a></li>
 				<li><a href="">Tarifs et disponibilités</a></li>
 				<li><a href="">Contact</a></li>
 				<li><a href="">Liens</a></li>

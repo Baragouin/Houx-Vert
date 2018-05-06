@@ -41,6 +41,10 @@ body{
 	font-family: "Quattrocento";
 }
 
+#page article p{
+	margin-bottom: 10px;
+}
+
 #page article h2{
 	margin-bottom: 15px;
 }
