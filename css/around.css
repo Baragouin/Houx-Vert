@@ -18,9 +18,8 @@
 }
 
 body{
-	background-image: url("../images/leaves.png");
 	background-size: 100px;
-	background-attachment: fixed;
+	background: url("../images/leaves.png") fixed;
 }
 
 #main_wrapper{
@@ -39,7 +38,7 @@ body{
 #page article{
    	width: 70%;
 	padding: 0 20px;
-	font-family: "Quattrocento";
+	font-family: "Quattrocento", serif;
 }
 
 #page article p{
@@ -51,7 +50,7 @@ body{
 }
 
 .title{
-	font-family: "DIN Pro";
+	font-family: "DIN Pro", serif;
 	font-size: 2em;
 	margin: 20px 0;
 }
