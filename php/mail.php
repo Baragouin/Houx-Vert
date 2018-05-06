@@ -44,10 +44,10 @@ function send($mail_target, $mail_sender, $content){
     $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
 //==========
 
-    echo "Mail: ".$mail_target;
-    echo "Subject: ".$sujet;
-    echo "Message: ".$message;
-    echo "Header: ".$header;
+    echo "Mail: ".$mail_target."<br/><br/>";
+    echo "Subject: ".$sujet."<br/><br/>";
+    echo "Message: ".$message."<br/><br/>";
+    echo "Header: ".$header."<br/><br/>";
 
 //=====Envoi de l'e-mail.
     mail($mail_target,$sujet,$message,$header);
