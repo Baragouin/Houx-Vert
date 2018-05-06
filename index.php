@@ -8,6 +8,8 @@
 	if(!isset($lang)){
 		$lang = "fr";
 	}
+
+	mail.send("medico.timothe@gmail.com", "contact@gitecolor.fr", "dd");
 ?>
 
 <!DOCTYPE html>
