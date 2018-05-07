@@ -58,10 +58,11 @@ body{
 
 #page article table{
     border-collapse: collapse;
+    margin: 20px 0;
 }
 
 #page article td, #page article th{
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 8px;
 }
 
