@@ -84,6 +84,15 @@ body{
     width: 15%;
     background-color: #C0CC4C;
     border: none;
+    transition: all ease-in-out .2s;
+}
+
+#bottom_lang button:hover{
+    box-shadow: 3px 3px 3px #a6b233;
+}
+
+#bottom_lang button:active{
+    box-shadow: inset 3px 3px 3px #a6b233;
 }
 
 .title{
