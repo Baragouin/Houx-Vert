@@ -50,6 +50,10 @@ body{
     margin-bottom: 15px;
 }
 
+#page form{
+    text-align: center;
+}
+
 #page form p{
     margin-bottom: 5px;
 }
@@ -57,6 +61,9 @@ body{
 #page form input{
     width: 30%;
     margin-bottom: 20px;
+
+    border: #C0CC4C solid 1px;
+    border-radius: 5px;
 }
 
 #page form textarea{
@@ -67,10 +74,6 @@ body{
     margin-top: 20px !important;
     padding: 5px;
     width: 15%;
-}
-
-#button{
-    text-align: center;
 }
 
 .title{
