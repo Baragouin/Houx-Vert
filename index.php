@@ -8,6 +8,8 @@
 	if(!isset($lang)){
 		$lang = "fr";
 	}
+
+	include("php/modal.php");
 ?>
 
 <!DOCTYPE html>
