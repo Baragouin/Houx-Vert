@@ -54,6 +54,15 @@ body{
     margin-bottom: 5px;
 }
 
+#page form input{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#page form textarea{
+    width: 70%;
+}
+
 #page form input[type=submit]{
     margin-top: 20px;
     padding: 5px;

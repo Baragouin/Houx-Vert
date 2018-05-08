@@ -46,8 +46,6 @@ if(!isset($lang)){
                 </p>
 
                 <?php
-                include("../php/signature.php");
-
             }
             ?>
         </article>
