@@ -63,12 +63,14 @@ body{
     margin-bottom: 20px;
     border-radius: 5px;
     outline: none;
+    font-family: "DIN Pro";
 }
 
 #page form textarea{
     width: 70%;
     border-radius: 5px;
     outline: none;
+    font-family: "DIN Pro";
 }
 
 #page form input[type=submit]{
