@@ -56,22 +56,23 @@ body{
 
 #page form p{
     margin-bottom: 5px;
-    font-family: "DIN Pro";
+    font-family: "DIN Pro", serif;
 }
 
 #page form input{
     width: 30%;
     margin-bottom: 20px;
+    border: 1px solid #A9A9A9;
     border-radius: 5px;
     outline: none;
-    font-family: "DIN Pro";
+    font-family: "DIN Pro", serif;
 }
 
 #page form textarea{
     width: 70%;
     border-radius: 5px;
     outline: none;
-    font-family: "DIN Pro";
+    font-family: "DIN Pro", serif;
 }
 
 #page form input[type=submit]{
@@ -79,6 +80,7 @@ body{
     padding: 5px;
     width: 15%;
     background-color: #C0CC4C;
+    border: none;
 }
 
 .title{
