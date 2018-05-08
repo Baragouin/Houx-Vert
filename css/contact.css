@@ -56,6 +56,7 @@ body{
 
 #page form p{
     margin-bottom: 5px;
+    font-family: "DIN Pro";
 }
 
 #page form input{
@@ -77,6 +78,7 @@ body{
     margin-top: 20px !important;
     padding: 5px;
     width: 15%;
+    background-color: #C0CC4C;
 }
 
 .title{
