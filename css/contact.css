@@ -64,10 +64,13 @@ body{
 }
 
 #page form input[type=submit]{
-    margin: auto;
     margin-top: 20px !important;
     padding: 5px;
     width: 15%;
+}
+
+#page form input[type=submit]:before{
+    text-align: center;
 }
 
 .title{
