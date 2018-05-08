@@ -9,7 +9,7 @@
 		$lang = "fr";
 	}
 
-	include("php/modal.php");
+	/*include("php/modal.php");*/
 ?>
 
 <!DOCTYPE html>
