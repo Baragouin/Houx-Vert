@@ -50,6 +50,15 @@ body{
     margin-bottom: 15px;
 }
 
+#page form p{
+    margin-bottom: 5px;
+}
+
+#page form input[type=submit]{
+    margin-top: 20px;
+    padding: 5px;
+}
+
 .title{
     font-family: "DIN Pro", serif;
     font-size: 2em;
