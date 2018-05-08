@@ -8,8 +8,6 @@
 	if(!isset($lang)){
 		$lang = "fr";
 	}
-
-	/*include("php/modal.php");*/
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +20,8 @@
 	<script src="js/cookie.js?<?php echo time(); ?>"></script>
 </head>
 <body>
+    <?php include("php/modal.php"); ?>
+
 	<div id="main_wrapper">
 		<?php include("php/header.php");?>
 
