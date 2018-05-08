@@ -61,13 +61,14 @@ body{
 #page form input{
     width: 30%;
     margin-bottom: 20px;
-
-    border: #C0CC4C solid 1px;
     border-radius: 5px;
+    outline: none;
 }
 
 #page form textarea{
     width: 70%;
+    border-radius: 5px;
+    outline: none;
 }
 
 #page form input[type=submit]{
