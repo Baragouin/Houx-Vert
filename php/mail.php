@@ -32,14 +32,13 @@
 </head>
 <body>
     <p>Vous allez être redirigé vers la page principale, <a href="../index.php"> cliquer ici </a> si rien ne se passe</p>
-
-
-    <?php
-        sleep(5);
-
-
-        header("Location: http://www.baragouin.fr");
-        die();
-    ?>
 </body>
 </html>
+
+<?php
+    sleep(5);
+
+
+    header("Location: http://www.baragouin.fr");
+    die();
+?>
