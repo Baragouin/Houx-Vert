@@ -1,16 +1,19 @@
 function english(){
+    alert("english")
 	eraseCookie("lang");
 	setCookie("lang", "en", 365);
 	location.reload();
 }
 
 function spain(){
+    alert("spain")
 	eraseCookie("lang");
 	setCookie("lang", "es", 365);
 	location.reload();
 }
 
 function french(){
+    alert("french")
 	eraseCookie("lang");
 	setCookie("lang", "fr", 365);
 	location.reload();
