@@ -18,7 +18,6 @@
                 <li><a href="../php/ecology.php">Écologie</a></li>
 				<li><a href="../php/prices.php">Tarifs et disponibilités</a></li>
 				<li><a href="../php/contact.php">Contact</a></li>
-				<li><a href="">Liens</a></li>
 			</ul>
 		</nav>
 	</section>

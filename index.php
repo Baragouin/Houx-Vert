@@ -14,6 +14,10 @@
 <html>
 <head>
 	<title>le Houx Vert - Gîte écolo</title>
+
+    <meta charset="utf-8"/>
+    <meta name="description" content="Site officiel du gîte le Houx-Vert."/>
+
 	<link rel="stylesheet" type="text/css" href="css/index.css?<?php echo time(); ?>">
 	<link rel="icon" type="image/png" href="favicon.png"/>
 

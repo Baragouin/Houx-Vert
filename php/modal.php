@@ -5,7 +5,7 @@
 
 <div id="modal">
     <div id="modal-content">
-        <span class="close">$times</span>
+        <span class="close">X</span>
         <p>Poursuivant la navigation sur ce site, vous acceptez les cookies nécessaires au bon fonctionnement de celui-ci.</p>
     </div>
 </div>
