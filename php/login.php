@@ -13,12 +13,12 @@
 
                 <div class="form-group">
                     <label for="username">Nom d'utilisateur:</label>
-                    <input type="text" name="username" class="form-input" placeholder="Entrer un nom d'utilisateur ..." />
+                    <input type="text" id="username" name="username" class="form-input" placeholder="Entrer un nom d'utilisateur ..." />
                 </div>
 
                 <div class="form-group">
                     <label for="password">Mot de passe:</label>
-                    <input type="password" name="password" class="form-input" placeholder="Entrer un mot de passe ..."/>
+                    <input type="password" id="password" name="password" class="form-input" placeholder="Entrer un mot de passe ..."/>
                 </div>
 
                 <div class="form-group">
@@ -46,7 +46,7 @@
             die("Erreur : " . $e -> getMessage());
         }
 
-        $reply = $bdd -> query("SELECT * FROM admin WHERE username = " . $username . " AND WHERE password = " . $password);
+        $reply = $bdd -> query("SELECT * FROM admin WHERE username = " . $username . " AND password = " . $password);
 
         if($result < 0){
             echo "Nom d'utilisateur ou mot de passe éronné";
