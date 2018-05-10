@@ -32,6 +32,8 @@
 
 <?php
     echo "Here";
+    echo "Username: " . $username;
+    echo "Password: " . $password;
 
     if(isset($_POST["username"]) && isset($_POST["password"])){
         echo "1";
