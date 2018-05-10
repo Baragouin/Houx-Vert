@@ -22,10 +22,32 @@
 	<link rel="icon" type="image/png" href="favicon.png"/>
 
 	<script src="js/cookie.js?<?php echo time(); ?>"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#3ca23a"
+                    },
+                    "button": {
+                        "background": "#ffffff",
+                        "text": "#000000"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "En poursuivant votre navigation sur nos sites, vous acceptez l'installation et l'utilisation de cookies pour améliorer votre expérience.",
+                    "dismiss": "Accepter",
+                    "link": "En savoir plus",
+                    "href": "https://www.baragouin.fr/php/cookies.php"
+                }
+            })});
+    </script>
 </head>
 <body>
-    <?php include("php/modal.php"); ?>
-
 	<div id="main_wrapper">
 		<?php include("php/header.php");?>
 
