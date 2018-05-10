@@ -26,7 +26,7 @@
 	<script src="js/cookie.js?<?php echo time(); ?>"></script>
 
     <?php
-        if($show){
+        if($show == true){
             ?>
 
             <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
