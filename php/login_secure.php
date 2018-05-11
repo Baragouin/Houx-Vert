@@ -1,10 +1,8 @@
 <?php
-echo "Here";
-echo "Username: " . $_POST["username"];
-echo "Password: " . $_POST["password"];
+echo "Username: " . $_POST["username"] . "<br>";
+echo "Password: " . $_POST["password"] . "<br>";
 
 if(isset($_POST["username"]) && isset($_POST["password"])){
-    echo "1";
     $username = $_POST["username"];
     $password = $_POST["password"];
 
@@ -16,7 +14,7 @@ if(isset($_POST["username"]) && isset($_POST["password"])){
 
     $reply = $bdd -> query("SELECT * FROM admin WHERE username = " . $username . " AND password = " . $password);
 
-    if($result < 0){
+    if($reply < 0){
         echo "Nom d'utilisateur ou mot de passe éronné";
     } else {
         echo "Bienvenue " . $username;
