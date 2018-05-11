@@ -3,7 +3,7 @@
     echo "Password: " . $_POST["password"] . "<br>";
 
     if(isset($_POST["username"]) && isset($_POST["password"])){
-        echo "Variables set";
+        echo "Variables set <br>";
         $username = $_POST["username"];
         $password = $_POST["password"];
 
@@ -13,9 +13,11 @@
             die("Erreur : " . $e -> getMessage());
         }
 
-        echo "Database connected";
+        echo "Database connected <br>";
 
         $reply = $bdd -> query("SELECT * FROM admin WHERE username = " . $username . " AND password = " . $password);
+
+        echo "Reply: " . $reply . "<br>";
 
         if($reply < 0){
             echo "Nom d'utilisateur ou mot de passe éronné";
