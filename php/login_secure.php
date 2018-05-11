@@ -15,7 +15,7 @@
 
         echo "Database connected <br>";
 
-        $reply = $bdd -> query("SELECT * FROM admin WHERE username = '" . $username . "' AND password = '" . $password) . "';";
+        $reply = $bdd -> query("SELECT * FROM admin WHERE username='$username'  AND password='$password';");
 
         echo "Reply: " . $reply . "<br>";
 
