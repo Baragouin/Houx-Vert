@@ -16,6 +16,7 @@
         echo "Database connected <br>";
 
         $number = 8/0;
+        phpinfo(;
 
         try {
             $reply = $bdd->query("SELECT COUNT(*) FROM admin WHERE username='$username' AND password='$password';");
