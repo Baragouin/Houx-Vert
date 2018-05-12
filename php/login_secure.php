@@ -19,7 +19,11 @@
 
         echo $sql;
 
-        $reply = $bdd -> query($sql);
+        try {
+            $reply = $bdd->query($sql);
+        } catch (Exception $e){
+            die("Erreur : " . $e -> getMessage());
+        }
 
         echo "Reply: " . $reply . "<br>";
 
