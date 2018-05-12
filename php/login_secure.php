@@ -21,13 +21,13 @@
 
         $reply = $bdd -> query($sql);
 
-        /*echo "Reply: " . $reply . "<br>";*/
+        echo "Reply: " . $reply . "<br>";
 
-        /*if($reply < 0){
+        if($reply < 0){
             echo "Nom d'utilisateur ou mot de passe éronné";
         } else {
             echo "Bienvenue " . $username;
-        }*/
+        }
     }
 
 ?>
