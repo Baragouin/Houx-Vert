@@ -15,15 +15,19 @@
 
         echo "Database connected <br>";
 
-        $reply = $bdd -> query("SELECT * FROM admin WHERE username='$username'  AND password='$password';");
+        $sql = "SELECT * FROM admin WHERE username='$username' AND password='$password';";
 
-        echo "Reply: " . $reply . "<br>";
+        echo $sql;
 
-        if($reply < 0){
+        $reply = $bdd -> query($sql);
+
+        /*echo "Reply: " . $reply . "<br>";*/
+
+        /*if($reply < 0){
             echo "Nom d'utilisateur ou mot de passe éronné";
         } else {
             echo "Bienvenue " . $username;
-        }
+        }*/
     }
 
 ?>
