@@ -15,12 +15,8 @@
 
         echo "Database connected <br>";
 
-        $sql = "SELECT * FROM admin WHERE username='$username' AND password='$password';";
-
-        echo $sql;
-
         try {
-            $reply = $bdd->query($sql);
+            $reply = $bdd->query("SELECT COUNT(*) FROM admin WHERE username='$username' AND password='$password';");
         } catch (Exception $e){
             die("Erreur : " . $e -> getMessage());
         }
