@@ -7,26 +7,20 @@
         $username = $_POST["username"];
         $password = $_POST["password"];
 
-        try {
-            $bdd = new PDO("mysql:host=localhost;dbname=bruno;charset=utf8", "root", "Hra8rCJz", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-        } catch (Exception $e){
-            die("Erreur : " . $e -> getMessage());
+        $connection = mysqli_connect("localhost", "root", "Hra8rCJz", "bruno");
+
+        if(mysqli_connect_errno()){
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
         echo "Database connected <br>";
 
-        try {
-            $reply = $bdd->query("SELECT COUNT(*) FROM admin WHERE username='$username' AND password='$password';");
-        } catch (Exception $e){
-            die("Erreur : " . $e -> getMessage());
-        }
+        $sql = mysqli_query("SELECT FROM users (username, password) WHERE username=$fusername");
 
-        echo "Reply: " . $reply . "<br>";
-
-        if($reply < 0){
-            echo "Nom d'utilisateur ou mot de passe éronné";
-        } else {
+        if(mysqli_num_rows($sql)>=1){
             echo "Bienvenue " . $username;
+        } else {
+            echo "Erreur, nom d'utilisateur ou mot de passe incorect";
         }
     }
 
