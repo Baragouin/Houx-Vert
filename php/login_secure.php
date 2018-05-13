@@ -15,13 +15,15 @@
 
         echo "Database connected <br>";
 
-        $sql = mysqli_query("SELECT FROM users (id,username, password) WHERE username=$fusername");
+        $sql = mysqli_query("SELECT FROM users WHERE username=$fusername AND password=$password");
 
         if(mysqli_num_rows($sql)>=1){
             echo "Bienvenue " . $username;
         } else {
             echo "Erreur, nom d'utilisateur ou mot de passe incorect";
         }
+
+        mysqli_close($sql);
     }
 
 ?>
