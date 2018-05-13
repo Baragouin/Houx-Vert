@@ -15,7 +15,7 @@
 
         echo "Database connected <br>";
 
-        $sql = mysqli_query("SELECT FROM users (username, password) WHERE username=$fusername");
+        $sql = mysqli_query("SELECT FROM users (id,username, password) WHERE username=$fusername");
 
         if(mysqli_num_rows($sql)>=1){
             echo "Bienvenue " . $username;
