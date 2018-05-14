@@ -90,6 +90,6 @@ form{
 
 #wrong-password{
     text-align: center;
-    color: red;
+    color: #CC0000;
     text-decoration: underline;
 }
