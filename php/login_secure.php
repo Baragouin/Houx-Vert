@@ -19,7 +19,7 @@
 
         echo "Database connected <br>";
 
-        $sql = "SELECT * FROM admin;";
+        $sql = "SELECT * FROM admin WHERE username=\"" . $username . "\" AND password=\"" . $password . "\";";
 
         if(!$result = $connection -> query($sql)){
             echo "Error: Our query failed to execute and here is why: \n";
@@ -29,13 +29,11 @@
             exit;
         }
 
-        echo "<table>";
-
-        while($row = $result -> fetch_assoc()){
-            echo "<tr> <td>Id=" . $row["id"] . "</td> <td>Pseudo=" . $row["username"] . "</td> <td>Password=" . $row["password"] . "</td> </tr>";
+        if($result -> num_rows < 1){
+            echo "Nom d'utilisateur ou mot de passe incorrect";
+        } else {
+            echo "Bienvenue " . $username;
         }
-
-        echo "</table>";
 
         mysqli_close($result);
     }
