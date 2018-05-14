@@ -1,6 +1,5 @@
 footer{
 	background-color: #3CA23A;
-	height: 50px;
 }
 
 footer p{
@@ -8,6 +7,18 @@ footer p{
 	color: white;
 	font-family: "DIN Pro";
 	line-height: 50px;
+}
+
+footer #login{
+	line-height: normal;
+}
+
+footer #login a{
+	color: white;
+}
+
+footer #login a:visited{
+	color: white;
 }
 
 #main_wrapper{

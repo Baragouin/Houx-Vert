@@ -4,5 +4,5 @@
 
 <footer>
 	<p>© <?php echo date("Y");?> Gîte Écolo le Houx-Vert - Tous droits réservés - Réalisé par Timothé Medico</p>
-    <p><a href="../php/login.php">Connection</a></p>
+    <p id="login"><a href="../php/login.php">Connection</a></p>
 </footer>
