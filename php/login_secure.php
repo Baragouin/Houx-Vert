@@ -15,15 +15,17 @@
 
         echo "Database connected <br>";
 
-        $sql = mysqli_query("SELECT * FROM admin WHERE username=$fusername AND password=$password");
+        $result = mysqli_query("SELECT * FROM admin;");
 
-        if(mysqli_num_rows($sql)>=1){
-            echo "Bienvenue " . $username;
-        } else {
-            echo "Erreur, nom d'utilisateur ou mot de passe incorect";
+        echo "<table>";
+
+        while($row = mysqli_fetch_array($result)){
+            echo "<tr> <td>Id=$row[0]</td> <td>Pseudo=$row[1]</td> <td>Password=$row[2]</td> </tr>";
         }
 
-        mysqli_close($sql);
+        echo "</table>";
+
+        mysqli_close($result);
     }
 
 ?>
