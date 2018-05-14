@@ -39,6 +39,6 @@
     sleep(5);
 
 
-    header("Location: http://www.baragouin.fr");
+    header("Location: https://www.baragouin.fr");
     die();
 ?>

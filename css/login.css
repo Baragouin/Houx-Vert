@@ -87,3 +87,9 @@ form{
     outline: none;
     padding: .4em 1em;
 }
+
+#wrong-password{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
