@@ -6,19 +6,7 @@ footer p{
 	text-align: center;
 	color: white;
 	font-family: "DIN Pro";
-	line-height: 30px;
-}
-
-footer #login{
-	line-height: normal;
-}
-
-footer #login a{
-	color: white;
-}
-
-footer #login a:visited{
-	color: white;
+	line-height: 50px;
 }
 
 #main_wrapper{
