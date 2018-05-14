@@ -48,7 +48,7 @@
                     }
 
                     if($result -> num_rows < 1){
-                        echo "<p id=\"wrong_password\">Nom d'utilisateur ou mot de passe incorrect</p>";
+                        echo "<p id=\"wrong-password\">Nom d'utilisateur ou mot de passe incorrect</p>";
                     } else {
                         login($username);
                     }
