@@ -74,7 +74,7 @@ function login($username){
     $_SESSION["login"] = true;
     $_SESSION["pseudo"] = $username;
 
-    header("Location: https://baragouin.fr/php/admin.php");
+    header("Location: https://baragouin.fr/php/panel.php");
 }
 
 ?>
