@@ -10,17 +10,29 @@
         $connection = mysqli_connect("localhost", "root", "Hra8rCJz", "bruno");
 
         if(mysqli_connect_errno()){
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            echo "Error: Failed to make a MySQL connection, here is why: \n";
+            echo "Errno: " . $connection -> connect_errno . "\n";
+            echo "Error: " . $connection -> connect_error . "\n";
+
+            exit;
         }
 
         echo "Database connected <br>";
 
-        $result = mysqli_query("SELECT * FROM admin;");
+        $sql = "SELECT * FROM admin;";
+
+        if(!$result = $connection -> query($sql)){
+            echo "Error: Our query failed to execute and here is why: \n";
+            echo "Query: " . $sql . "\n";
+            echo "Errno: " . $mysqli->errno . "\n";
+            echo "Error: " . $mysqli->error . "\n";
+            exit;
+        }
 
         echo "<table>";
 
-        while($row = mysqli_fetch_array($result)){
-            echo "<tr> <td>Id=$row[0]</td> <td>Pseudo=$row[1]</td> <td>Password=$row[2]</td> </tr>";
+        while($row = $result -> fetch_assoc()){
+            echo "<tr> <td>Id=" . $row["id"] . "</td> <td>Pseudo=" . $row["username"] . "</td> <td>Password=" . $row["password"] . "</td> </tr>";
         }
 
         echo "</table>";
