@@ -6,7 +6,7 @@ footer p{
 	text-align: center;
 	color: white;
 	font-family: "DIN Pro";
-	line-height: 50px;
+	margin-bottom: 20px;
 }
 
 footer #login{
