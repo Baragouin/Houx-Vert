@@ -26,6 +26,8 @@
                 if(isset($_POST["username"]) && isset($_POST["password"])){
                     $username = $_POST["username"];
                     $password = $_POST["password"];
+                    unset($_POST["username"]);
+                    unset($_POST["password"]);
 
                     $connection = mysqli_connect("localhost", "root", "Hra8rCJz", "bruno");
 
@@ -72,7 +74,7 @@
 function login($username){
     session_start();
     $_SESSION["login"] = true;
-    $_SESSION["pseudo"] = $username;
+    $_SESSION["username"] = $username;
 
     header("Location: https://baragouin.fr/php/panel.php");
 }
