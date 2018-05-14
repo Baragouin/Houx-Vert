@@ -3,7 +3,6 @@
     echo "Password: " . $_POST["password"] . "<br>";
 
     if(isset($_POST["username"]) && isset($_POST["password"])){
-        echo "Variables set <br>";
         $username = $_POST["username"];
         $password = $_POST["password"];
 
@@ -16,8 +15,6 @@
 
             exit;
         }
-
-        echo "Database connected <br>";
 
         $sql = "SELECT * FROM admin WHERE username=\"" . $username . "\" AND password=\"" . $password . "\";";
 

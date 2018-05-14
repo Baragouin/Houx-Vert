@@ -6,7 +6,44 @@
 <body>
     <div id="main_wrapper">
         <div id="login-container">
-            <form id="login" action="login_secure.php" method="post">
+            <form id="login" action="login.php" method="post">
+                <?php
+
+                if(isset($_POST["username"]) && isset($_POST["password"])){
+                    $username = $_POST["username"];
+                    $password = $_POST["password"];
+
+                    $connection = mysqli_connect("localhost", "root", "Hra8rCJz", "bruno");
+
+                    if(mysqli_connect_errno()){
+                        echo "Error: Failed to make a MySQL connection, here is why: \n";
+                        echo "Errno: " . $connection -> connect_errno . "\n";
+                        echo "Error: " . $connection -> connect_error . "\n";
+
+                        exit;
+                    }
+
+                    $sql = "SELECT * FROM admin WHERE username=\"" . $username . "\" AND password=\"" . $password . "\";";
+
+                    if(!$result = $connection -> query($sql)){
+                        echo "Error: Our query failed to execute and here is why: \n";
+                        echo "Query: " . $sql . "\n";
+                        echo "Errno: " . $mysqli->errno . "\n";
+                        echo "Error: " . $mysqli->error . "\n";
+                        exit;
+                    }
+
+                    if($result -> num_rows < 1){
+                        echo "Nom d'utilisateur ou mot de passe incorrect";
+                    } else {
+                        echo "Bienvenue " . $username;
+                    }
+
+                    mysqli_close($result);
+                }
+
+                ?>
+
                 <div class="title">
                     Identification requise
                 </div>
