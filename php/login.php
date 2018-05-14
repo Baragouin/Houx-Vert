@@ -26,8 +26,6 @@
                 if(isset($_POST["username"]) && isset($_POST["password"])){
                     $username = $_POST["username"];
                     $password = $_POST["password"];
-                    unset($_POST["username"]);
-                    unset($_POST["password"]);
 
                     $connection = mysqli_connect("localhost", "root", "Hra8rCJz", "bruno");
 
@@ -50,7 +48,7 @@
                     }
 
                     if($result -> num_rows < 1){
-                        echo "<p id='wrong-password' title='Contacter medico.timothe@gmail.com en cas de mot de passe oublier'>Nom d'utilisateur ou mot de passe incorrect</p>";
+                        echo "<p id='wrong-password' title='Contacter medico.timothe@gmail.com en cas de mot de passe oublier'>Nom d'utilisateur ou mot de passe incorrect !</p>";
                     } else {
                         login($username);
                     }
