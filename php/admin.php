@@ -6,7 +6,7 @@
 <div id="admin">
     <p>
         <a href="php/login.php">
-            <img src="images/admin.png">
+            <img src="../images/admin.png">
             <br>
             Admin panel
         </a>
