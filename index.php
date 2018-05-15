@@ -92,8 +92,7 @@
 	<?php include("php/lang.php");?>
 
     <div id="admin">
-        <img src="images/admin.png">
-        <p><a href="php/login.php">Admin panel</a></p>
+        <p><a href="php/login.php"><img src="images/admin.png"> <br> Admin panel</a></p>
     </div>
 </body>
 </html>

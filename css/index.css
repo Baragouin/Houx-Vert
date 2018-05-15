@@ -70,12 +70,12 @@ body{
     position: relative;
     top: -1650px;
 	right: 20px;
-	background: rgba(255,255,255,0.6);
-	border: 1px solid black;
+	background: rgba(192,204,76,0.8);
+	border: 2px solid black;
 	border-radius: 5px;
 }
 
-#admin img{
+#admin p img{
 	width: 50px;
 }
 
