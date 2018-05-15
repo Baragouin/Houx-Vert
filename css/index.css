@@ -62,6 +62,20 @@ body{
 	border-radius: 5px;
 }
 
+#admin{
+	width: 200px;
+	height: 100px;
+	text-align: center;
+}
+
+#admin img{
+	width: 50px;
+}
+
+#admin p{
+	font-family: "DIN Pro";
+}
+
 /*Mobile and tablet*/
 @media (min-width: 0px) and (max-width: 1024px) {
 

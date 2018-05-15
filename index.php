@@ -88,6 +88,11 @@
 		</section>
 
 		<?php include("php/footer.php");?>
+
+        <div id="admin">
+            <img src="images/admin.png">
+            <p><a href="php/login.php"></a></p>
+        </div>
 	</div>
 	<?php include("php/lang.php");?>
 </body>
