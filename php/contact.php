@@ -59,7 +59,7 @@ if(!isset($lang)){
 </div>
 
 <?php
-    include("php/lang.php");
-    include("php/admin.php");
+    include("../php/lang.php");
+    include("../php/admin.php");
 ?>
 </body>
