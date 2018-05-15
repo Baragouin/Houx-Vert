@@ -60,5 +60,8 @@
 		<?php include("../php/footer.php");?>
 	</div>
 
-	<?php include("../php/lang.php");?>
+    <?php
+        include("php/lang.php");
+        include("php/admin.php");
+    ?>
 </body>

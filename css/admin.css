@@ -1,0 +1,39 @@
+#admin{
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    float: right;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.8);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#admin p img{
+    width: 50px;
+}
+
+#admin p{
+    font-family: "DIN Pro";
+}
+
+#admin p a{
+    overflow: auto;
+    color: black;
+    text-decoration: none;
+}
+
+#admin p a:visited{
+    color: black;
+}
+
+/*Mobile and tablet*/
+@media (min-width: 0px) and (max-width: 1024px) {
+
+    #admin{
+        display: none;
+    }
+
+}

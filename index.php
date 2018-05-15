@@ -89,16 +89,11 @@
 
 		<?php include("php/footer.php");?>
 	</div>
-	<?php include("php/lang.php");?>
 
-    <div id="admin">
-        <p>
-            <a href="php/login.php">
-                <img src="images/admin.png">
-                <br>
-                Admin panel
-            </a>
-        </p>
-    </div>
+	<?php
+        include("php/lang.php");
+        include("php/admin.php");
+    ?>
+
 </body>
 </html>
