@@ -1,5 +1,4 @@
 #admin{
-    display: none;
     width: 200px;
     padding: 20px;
     text-align: center;
@@ -10,10 +9,6 @@
     background: rgba(255,255,255,0.8);
     border: 2px solid black;
     border-radius: 5px;
-}
-
-#admin:hover{
-    display: block;
 }
 
 #admin p img{
