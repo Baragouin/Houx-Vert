@@ -80,6 +80,7 @@ body{
 }
 
 #admin p{
+	line-height: 100%;
 	font-family: "DIN Pro";
 }
 
